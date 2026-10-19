@@ -1,0 +1,177 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #dbeafe, #eff6ff);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 25px 15px;
+}
+
+.container {
+    background: white;
+    width: 100%;
+    max-width: 500px;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+}
+
+h1 {
+    text-align: center;
+    color: #1d4ed8;
+    margin-bottom: 10px;
+    font-size: 27px;
+}
+
+.subtitle {
+    text-align: center;
+    color: #64748b;
+    margin-bottom: 25px;
+}
+
+.form-group {
+    margin-bottom: 18px;
+}
+
+label {
+    display: block;
+    margin-bottom: 7px;
+    font-weight: bold;
+    color: #334155;
+}
+
+input, select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #cbd5e1;
+    border-radius: 6px;
+    font-size: 15px;
+    background-color: white;
+}
+
+input:focus, select:focus {
+    outline: none;
+    border-color: #2563eb;
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.12);
+}
+
+input[type="file"] {
+    padding: 9px;
+}
+
+.hint {
+    display: block;
+    color: #64748b;
+    font-size: 12px;
+    margin-top: 6px;
+    line-height: 1.5;
+}
+
+.error {
+    display: block;
+    color: #dc2626;
+    font-size: 13px;
+    margin-top: 5px;
+}
+
+button {
+    width: 100%;
+    padding: 13px;
+    background-color: #2563eb;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #1d4ed8;
+}
+
+#successMessage {
+    color: #15803d;
+    text-align: center;
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 22px 18px;
+    }
+
+    h1 {
+        font-size: 23px;
+    }
+
+    input, select {
+        font-size: 14px;
+    }
+}
+
+
+
+
+.college-header {
+    position: relative;
+    width: 200%;
+    height: 790px;
+    overflow: hidden;
+    background: #123b70;
+}
+
+.college-banner {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.college-overlay {
+    position: absolute;
+    inset: 0;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    color: white;
+}
+
+.college-overlay h1 {
+    color: white;
+    font-size: clamp(22px, 4vw, 38px);
+    margin-bottom: 500px;
+}
+
+.college-overlay p {
+    font-size: 18px;
+    letter-spacing: 1px;
+}
+
+.container {
+    margin: 30px auto;
+}
+
+@media (max-width: 600px) {
+    .college-header {
+        height: 1000px;
+    }
+
+    .college-overlay p {
+        font-size: 15px;
+    }
+}
